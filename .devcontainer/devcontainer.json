@@ -1,0 +1,14 @@
+   // .devcontainer/devcontainer.json
+   {
+    "name": "My Test Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=/home/rob/Documents/Labs/TestDevContainers,target=/TestDevContainers,type=bind"
+    ],
+    "extensions": [] // Add any extensions that are needed in the container // i.e. "extensions": ["ms-python.python"]
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    }
+}
